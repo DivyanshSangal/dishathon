@@ -4,9 +4,8 @@ const apiai = require('apiai')(keys.sessionId);
 
 const app = express();
 const Port = process.env.PORT || 3000;
-const server = app.listen(Port);
+const server = app.listen(Port)
 const io = require('socket.io')(server);
-
 
 io.on('connection', function(socket){
   console.log('a user connected');

@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Nice</title>
-</head>
-<body>
 
-	<button>Talk</button>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
-    <script src="js/script.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DishTV- Stream Entertainment Forever</title>
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid content">
+      <a href="" class="navbar-brand"><img id="logo" src="#" alt="logo"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponse">
+        <ul class="navbar-nav nav-fill w-100 align-items-start">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Facilites
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="row text-center padding customrow">
+                <ul class="list-unstyled col-md-4">
+                  <li><a class="dropdown-item" href="#"><h5>COURSES</h5></a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Web</a></li>
+                  <li><a class="dropdown-item" href="#">App</a></li>
+                </ul>
+                <ul class="list-unstyled col-md-4">
+                  <li><a class="dropdown-item" href="#"><h5>JOBS</h5></a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                </ul>
+                <ul class="list-unstyled col-md-4">
+                  <li><a class="dropdown-item" href="#"><h5>RESOURCES</h5></a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Article</a></li>
+                  <li><a class="dropdown-item" href="#">Article</a></li>
+                </ul>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#custom-carousel">Testimony</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div id="myVideo" class="col-md-9 col-lg-9 col-sm-6">
+        <video id="videoFrame" controls autoplay name="media" __idm_id__="809780225"><source src="http://localhost:3000/vid/389.mp4" type="video/mp4"></video>
+        
+          <button id="myButton">
+            <i class="fa fa-spinner w3-spin" style="font-size:32px"></i>
+          </button>
+      </div>
+
+      <div id="mySlider" class="col">
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
